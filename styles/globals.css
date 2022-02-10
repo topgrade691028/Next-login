@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  @apply focus:outline-none focus:ring;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-secondary to-secondary-50 text-white;
+}
+
+.btn-transparent {
+  @apply bg-transparent text-white;
+}
+.btn-xl {
+  @apply px-25 py-15 text-20 rounded-lg;
+}
+
+.btn-lg {
+  @apply px-25 py-15 text-14 rounded-lg;
+}
+
+.btn-md {
+  @apply px-25 py-15 text-12 rounded-lg;
+}
+
+.btn-sm {
+  @apply px-25 py-10 text-10 rounded;
+}
+
+.btn-mini {
+  height: 30px;
+  @apply px-20 py-5 text-10 rounded-lg;
+}
+
+
+.circle1 {
+  background: linear-gradient(360deg, #1D2D6F 0%, #3A4EA2 86.32%);
+  border-radius: 50%;
+}
+.circle2 {
+  background: linear-gradient(231.76deg, #000000 21.25%, rgba(255, 255, 255, 50) 80.04%);
+  border-radius: 50%;
+}
